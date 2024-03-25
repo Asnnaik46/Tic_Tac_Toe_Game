@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    background-color: #50dcdf;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container {
+    margin-top: 5px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+h1 {
+    padding: 20px;
+    color: rgb(247, 255, 3);
+    background-color: rgb(255, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #f5f598;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #ffffff;
+}
+
+#reset-btn,
+#new-btn,
+#play-computer-btn,
+#multiplayer-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    top: 33%;
+}
+
+#reset-btn:hover,
+#new-btn:hover,
+#play-computer-btn:hover,
+#multiplayer-btn:hover {
+    background-color: #048f1b;
+}
+
+#message {
+    color: #c40606;
+    font-size: 5vmin;
+    position: relative;
+    top: 30%;
+    background-color: #edf261;
+    padding: 24px;
+    border-radius: 100px;
+}
+
+.msg {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 200px) {
+    h1 {
+        font-size: 20px;
+    }
+    .box {
+        font-size: 5vmin;
+        height: 10vmin;
+        width: 10vmin;
+    }
+    #message {
+        font-size: 3vmin;
+    }
+    #reset-btn,
+    #new-btn,
+    #play-computer-btn,
+    #multiplayer-btn {
+        font-size: 1rem;
+    }
+}
